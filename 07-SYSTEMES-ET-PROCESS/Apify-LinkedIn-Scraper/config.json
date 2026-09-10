@@ -1,0 +1,8 @@
+{
+  "profileScraperMode": "Full + email search",
+  "searchQuery": "directeur agence immobilière",
+  "locations": ["France"],
+  "currentJobTitles": ["Directeur d'agence", "Responsable d'agence", "Director"],
+  "profileLanguages": ["French"],
+  "maxItems": 200
+}

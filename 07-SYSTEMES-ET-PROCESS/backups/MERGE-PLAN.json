@@ -1,0 +1,310 @@
+[
+ {
+  "sujet": "Toute ma vie, j’ai combiné l’incombinable",
+  "keep": "3c07299b-2234-8140-8b7d-c22ef5e041eb",
+  "keep_id": 24,
+  "keep_n": 6,
+  "keep_len": 662,
+  "drop": "3c07299b-2234-81d0-9ce2-c212ac225717",
+  "drop_id": 26,
+  "drop_n": 6,
+  "drop_len": 654,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "Instagram",
+    "LinkedIn"
+   ],
+   "Texte final": [
+    "Je faisais mes devoirs dans le métro, me",
+    "Toute ma vie, j’ai combiné l’incombinabl"
+   ],
+   "Format": [
+    "Vidéo Neva",
+    "Post texte"
+   ]
+  }
+ },
+ {
+  "sujet": "L’exercice de ma dernière année : ne rien faire de mes propres mains",
+  "keep": "3c07299b-2234-81e9-861b-d6ad547da297",
+  "keep_id": 27,
+  "keep_n": 6,
+  "keep_len": 700,
+  "drop": "3c07299b-2234-8180-a203-da65f2bf82f1",
+  "drop_id": 25,
+  "drop_n": 6,
+  "drop_len": 685,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "Instagram",
+    "LinkedIn"
+   ],
+   "Texte final": [
+    "Pendant un an, je me suis interdit de tr",
+    "L’exercice le plus difficile de ma derni"
+   ],
+   "Format": [
+    "Vidéo Neva",
+    "Post texte"
+   ]
+  }
+ },
+ {
+  "sujet": "J’ai testé trop d’outils. Le meilleur n’était pas le plus spectaculaire",
+  "keep": "3c07299b-2234-810d-8e37-dd1be0692072",
+  "keep_id": 28,
+  "keep_n": 6,
+  "keep_len": 395,
+  "drop": "3c07299b-2234-81a5-9681-c97c1a80f9a2",
+  "drop_id": 43,
+  "drop_n": 6,
+  "drop_len": 287,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Après avoir testé trop d’outils, j’ai ce",
+    "Le meilleur outil IA n’est pas celui qui"
+   ],
+   "Format": [
+    "Carrousel",
+    "Vidéo Neva"
+   ]
+  }
+ },
+ {
+  "sujet": "Produire plus de contenu n’était pas le vrai problème",
+  "keep": "3c07299b-2234-8199-b29c-c6dd47ab0ce0",
+  "keep_id": 42,
+  "keep_n": 6,
+  "keep_len": 437,
+  "drop": "3c07299b-2234-8113-8a92-fe30f365a3da",
+  "drop_id": 29,
+  "drop_n": 6,
+  "drop_len": 335,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Le calendrier éditorial vide n’était pas",
+    "Je n’avais pas besoin de plus d’idées. J"
+   ],
+   "Format": [
+    "Post texte",
+    "Carrousel"
+   ]
+  }
+ },
+ {
+  "sujet": "Un avatar doit dire qu’il est un avatar",
+  "keep": "3c07299b-2234-817e-969a-f2b3cea06249",
+  "keep_id": 40,
+  "keep_n": 6,
+  "keep_len": 409,
+  "drop": "3c07299b-2234-811b-a319-da1c19d42384",
+  "drop_id": 30,
+  "drop_n": 6,
+  "drop_len": 327,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Un avatar de marque ne devrait jamais dé",
+    "Je suis Neva. Je suis un avatar de PROD’"
+   ],
+   "Format": [
+    "Post texte",
+    "Vidéo Neva"
+   ]
+  }
+ },
+ {
+  "sujet": "Automatiser Booking sans déshumaniser la réponse",
+  "keep": "3c07299b-2234-811c-927d-cfb5b4d8ac72",
+  "keep_id": 31,
+  "keep_n": 6,
+  "keep_len": 415,
+  "drop": "3c07299b-2234-8123-9d7c-eebca4e024b7",
+  "drop_id": 33,
+  "drop_n": 6,
+  "drop_len": 384,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Dans Booking, le choix n’est pas entre t",
+    "Une demande simple peut recevoir un brou"
+   ],
+   "Format": [
+    "Carrousel",
+    "Démo écran"
+   ]
+  }
+ },
+ {
+  "sujet": "L’IA ne m’a pas fait gagner du temps. Au début, elle m’en a pris",
+  "keep": "3c07299b-2234-8120-b9bb-d01796e1dbc3",
+  "keep_id": 32,
+  "keep_n": 6,
+  "keep_len": 503,
+  "drop": "3c07299b-2234-8179-be75-f9ed102fe1be",
+  "drop_id": 39,
+  "drop_n": 6,
+  "drop_len": 445,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "On parle beaucoup du temps gagné grâce à",
+    "L’IA devait me faire gagner du temps. Au"
+   ],
+   "Format": [
+    "Post texte",
+    "Carrousel"
+   ]
+  }
+ },
+ {
+  "sujet": "Neva ne sera pas seulement un visage : elle devra savoir quand se taire",
+  "keep": "3c07299b-2234-8171-aba9-c38f28447a0f",
+  "keep_id": 37,
+  "keep_n": 6,
+  "keep_len": 352,
+  "drop": "3c07299b-2234-8136-bfea-d17143f8e4d9",
+  "drop_id": 34,
+  "drop_n": 6,
+  "drop_len": 312,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "La qualité de Neva ne se mesurera pas se",
+    "Je ne veux pas être un avatar qui répond"
+   ],
+   "Format": [
+    "Carrousel",
+    "Vidéo Neva"
+   ]
+  }
+ },
+ {
+  "sujet": "Le human-in-the-loop n’est pas un échec de l’IA",
+  "keep": "3c07299b-2234-8172-b04e-c02c46aba57f",
+  "keep_id": 38,
+  "keep_n": 6,
+  "keep_len": 429,
+  "drop": "3c07299b-2234-8155-88d8-cc59f03d9282",
+  "drop_id": 35,
+  "drop_n": 6,
+  "drop_len": 306,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "J’ai longtemps associé une bonne automat",
+    "Garder un humain dans la boucle n’est pa"
+   ],
+   "Format": [
+    "Post texte",
+    "Carrousel"
+   ]
+  }
+ },
+ {
+  "sujet": "Génératif, agentique, automatisé : trois choses qu’on mélange",
+  "keep": "3c07299b-2234-81d7-960c-e36eed20d5a3",
+  "keep_id": 45,
+  "keep_n": 6,
+  "keep_len": 435,
+  "drop": "3c07299b-2234-816d-b027-e23fbd73e650",
+  "drop_id": 36,
+  "drop_n": 6,
+  "drop_len": 340,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Quand quelqu’un dit « je veux intégrer l",
+    "Créer un texte n’est pas la même chose q"
+   ]
+  }
+ },
+ {
+  "sujet": "Une idée disparaît en cinq minutes : pourquoi je construis un bot vocal",
+  "keep": "3c07299b-2234-81c0-9bf8-d898734db460",
+  "keep_id": 44,
+  "keep_n": 6,
+  "keep_len": 391,
+  "drop": "3c07299b-2234-8190-9144-d4a23cdf8ea9",
+  "drop_id": 41,
+  "drop_n": 6,
+  "drop_len": 346,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Mon problème de contenu n’était pas le m",
+    "Une idée arrive dans le métro. Cinq minu"
+   ],
+   "Format": [
+    "Carrousel",
+    "Démo écran"
+   ]
+  }
+ },
+ {
+  "sujet": "Automatiser un chaos ne crée pas un système",
+  "keep": "3c07299b-2234-81e9-b6c9-d5b72e48828f",
+  "keep_id": 46,
+  "keep_n": 6,
+  "keep_len": 430,
+  "drop": "3c07299b-2234-81ee-8bfd-fc046890ec18",
+  "drop_id": 47,
+  "drop_n": 6,
+  "drop_len": 390,
+  "transfer": {},
+  "conflicts": {
+   "Plateforme": [
+    "LinkedIn",
+    "Instagram"
+   ],
+   "Texte final": [
+    "Automatiser un processus instable ne cré",
+    "Si votre processus change à chaque fois,"
+   ],
+   "Format": [
+    "Post texte",
+    "Vidéo Neva"
+   ]
+  }
+ }
+]

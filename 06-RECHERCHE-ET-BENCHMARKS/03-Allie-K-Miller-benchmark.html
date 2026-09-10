@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benchmark Allie K. Miller — Cockpit Stratégie Formation</title>
+<style>
+:root{
+  --bg:#faf8f5; --card:#ffffff; --ink:#1c1a17; --ink2:#57514a; --line:#e6e0d8;
+  --accent:#0f766e; --accent-soft:#e6f2f0;
+  --s:#2563eb; --w:#dc2626; --o:#059669; --t:#d97706;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-size:clamp(28px,4.4vw,44px);line-height:1.12;margin:12px 0 10px;letter-spacing:-.02em}
+.sub{color:var(--ink2);font-size:17px;max-width:62ch}
+.meta{margin-top:14px;font-size:13px;color:var(--ink2)}
+nav{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav a{white-space:nowrap;font-size:13px;font-weight:600;color:var(--ink2);text-decoration:none;padding:6px 11px;border-radius:99px}
+nav a:hover{background:var(--accent-soft);color:var(--accent)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+h2 .n{color:var(--accent);font-weight:700;margin-right:10px}
+.lead{color:var(--ink2);margin:0 0 22px;max-width:70ch}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi b{display:block;font-size:26px;letter-spacing:-.02em}
+.kpi span{font-size:12.5px;color:var(--ink2)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 8px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--ink2)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-bottom:10px}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:720px){.swot{grid-template-columns:1fr}}
+.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;border-top:4px solid var(--line)}
+.q.s{border-top-color:var(--s)} .q.w{border-top-color:var(--w)} .q.o{border-top-color:var(--o)} .q.t{border-top-color:var(--t)}
+.q h4{margin:0 0 12px;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+.q.s h4{color:var(--s)} .q.w h4{color:var(--w)} .q.o h4{color:var(--o)} .q.t h4{color:var(--t)}
+.q ul{margin:0;padding-left:18px}
+.q li{font-size:14.5px;margin-bottom:8px;color:var(--ink2)}
+.q li b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14.5px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f3efe9;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+td:first-child{font-weight:600;width:26%}
+tr:last-child td{border-bottom:none}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px}
+details[open]{border-color:var(--accent)}
+summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";color:var(--accent);font-weight:700;font-size:20px;line-height:1}
+details[open] summary::before{content:"–"}
+.act{margin-top:14px}
+.act .code{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;background:#1c1a17;color:#fff;padding:3px 8px;border-radius:6px;margin-right:8px}
+.act p{margin:10px 0;font-size:14.5px;color:var(--ink2)}
+.act p b{color:var(--ink)}
+.alert{background:#fff8ed;border:1px solid #f5d9a8;border-left:4px solid var(--t);border-radius:10px;padding:18px 20px;margin:18px 0}
+.alert h3{margin:0 0 8px;font-size:16px;color:#9a5b06}
+.alert p{margin:0;font-size:14.5px;color:#6b4708}
+.gate{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.gate ol{margin:0;padding-left:20px}
+.gate li{margin-bottom:12px;font-size:14.5px;color:var(--ink2)}
+.gate li b{color:var(--ink)}
+.week{display:grid;grid-template-columns:80px 1fr;gap:0;border-left:2px solid var(--accent);padding-left:0}
+.week .w{display:contents}
+.week .lab{font-weight:800;color:var(--accent);font-size:13px;padding:14px 14px 14px 16px}
+.week .txt{padding:14px 0;font-size:14.5px;color:var(--ink2);border-bottom:1px solid var(--line)}
+.week .txt b{color:var(--ink)}
+footer{padding:36px 0 60px;font-size:13px;color:var(--ink2)}
+footer a{color:var(--accent)}
+.pill{display:inline-block;background:#1c1a17;color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:99px}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="kicker">Benchmark concurrentiel · Prod'AI Lab</div>
+  <h1>Allie K. Miller : ce qu'elle vend vraiment,<br>et ce que tu dois en faire</h1>
+  <p class="sub">Décodage du modèle, SWOT croisé (elle vs toi), matrice TOWS et plan d'action pour ta stratégie formation. Source : son site officiel + pages produit.</p>
+  <div class="meta">18 août 2026 · Analysé pour Katerina · Périmètre : offre formation Prod'AI Lab</div>
+</div></header>
+
+<nav><div class="wrap">
+  <a href="#modele">1. Le modèle</a>
+  <a href="#moteur">2. Le vrai moteur</a>
+  <a href="#swot-elle">3. SWOT — elle</a>
+  <a href="#swot-toi">4. SWOT — toi</a>
+  <a href="#tows">5. TOWS croisé</a>
+  <a href="#gate">6. Reality Gate</a>
+  <a href="#plan">7. Plan 30 jours</a>
+</div></nav>
+
+<section id="modele"><div class="wrap">
+  <h2><span class="n">01</span>Le modèle, en chiffres</h2>
+  <p class="lead">Ce qu'on voit de l'extérieur : une offre de formation étonnamment <b>légère</b>, portée par une audience et une autorité massives.</p>
+  <div class="kpis">
+    <div class="kpi"><b>~2 M</b><span>abonnés cumulés (voix n°1 IA business)</span></div>
+    <div class="kpi"><b>397 $</b><span>prix du cours phare, paiement unique</span></div>
+    <div class="kpi"><b>3 h +</b><span>de contenu vidéo — c'est tout</span></div>
+    <div class="kpi"><b>200 +</b><span>conférences données dans le monde</span></div>
+    <div class="kpi"><b>400 K</b><span>étudiants revendiqués sur ses cours</span></div>
+    <div class="kpi"><b>10 +</b><span>guides gratuits publiés</span></div>
+  </div>
+  <table>
+    <tr><th>Élément</th><th>Ce qu'elle fait</th><th>Lecture pour toi</th></tr>
+    <tr><td>Produit formation</td><td>AI-First Academy — 4 pistes progressives, 3 h de vidéo, 100 % asynchrone, aucune communauté, aucune garantie affichée</td><td>Le produit n'est <b>pas</b> le différenciateur. Tu peux produire mieux en 2 semaines.</td></tr>
+    <tr><td>Cible</td><td>Professionnels <b>non-techniques</b> en entreprise, + licence équipes/1000+ salariés</td><td>Même cible que toi, mais marché US/anglophone corporate.</td></tr>
+    <tr><td>Entrée gratuite</td><td>Cours e-mail 5 jours « AI Fast Track » → newsletter</td><td>Le vrai actif : la liste e-mail. Tu n'en as pas.</td></tr>
+    <tr><td>Preuve</td><td>CV (Amazon, IBM, Wharton) + logos clients (Novartis, Samsung, Google, OpenAI, Anthropic) + Time 100 AI</td><td>Preuve par le <b>passé institutionnel</b>. Toi : preuve par le <b>livrable présent</b>.</td></tr>
+    <tr><td>Revenus</td><td>3 tiroirs : conférences/advising (haut ticket), cours (volume), sponsoring/newsletter</td><td>Structure saine. Mais elle ne fait pas de « done-for-you ».</td></tr>
+  </table>
+</div></section>
+
+<section id="moteur"><div class="wrap">
+  <h2><span class="n">02</span>Le vrai moteur (à ne pas se tromper de cible)</h2>
+  <p class="lead">Erreur classique quand on benchmarke ce type de profil : croire qu'on est en concurrence sur le contenu. On ne l'est pas.</p>
+  <div class="cards">
+    <div class="card"><span class="tag">Ce qu'elle vend</span><h3>De la distribution, pas de la pédagogie</h3><p>3 h de vidéo à 397 $ ne se vendent pas par leur qualité intrinsèque. Elles se vendent parce que 2 M de personnes la suivent déjà et que le nom « ex-Amazon / Time 100 » supprime le risque perçu à l'achat.</p></div>
+    <div class="card"><span class="tag">Ce qui l'a construite</span><h3>Le contenu gratuit, pendant des années</h3><p>Newsletter, guides, 200+ talks, présence quotidienne. La formation est l'<b>aval</b> d'un système, pas son point de départ. Copier l'aval sans l'amont = zéro vente.</p></div>
+    <div class="card"><span class="tag">Sa limite</span><h3>Elle enseigne, elle ne livre pas</h3><p>Aucune offre « je le fais pour toi ». Son élève finit son cours… et reste seul face à l'exécution. C'est exactement le trou dans lequel ton done-for-you s'installe.</p></div>
+  </div>
+  <div class="alert">
+    <h3>Verdict de positionnement</h3>
+    <p>Tu ne peux pas gagner sur son terrain (autorité généraliste IA, anglophone, corporate US). Tu peux gagner sur un terrain qu'elle ne couvre pas : <b>la production vidéo/avatar IA, en français, avec livraison réelle en bout de chaîne</b>. Horizontal contre vertical — le vertical gagne toujours quand on n'a pas l'audience.</p>
+  </div>
+</div></section>
+
+<section id="swot-elle"><div class="wrap">
+  <h2><span class="n">03</span>SWOT — le modèle Allie K. Miller</h2>
+  <p class="lead">Analysé en tant que <b>concurrent / référence</b>, pas en tant que personne.</p>
+  <div class="swot">
+    <div class="q s"><h4>Forces</h4><ul>
+      <li><b>Autorité institutionnelle irréplicable</b> — Amazon (Global Head ML), IBM, Wharton, Time 100 AI.</li>
+      <li><b>Audience propriétaire</b> ~2 M + liste e-mail alimentée par un lead magnet gratuit efficace.</li>
+      <li><b>Logos clients premium</b> (Novartis, Samsung, Salesforce, Google, OpenAI, Anthropic) = preuve sociale instantanée.</li>
+      <li><b>Modèle scalable</b> : produit asynchrone, coût marginal nul, 400 K étudiants.</li>
+      <li><b>Trois sources de revenus</b> décorrélées (talks, cours, média).</li>
+    </ul></div>
+    <div class="q w"><h4>Faiblesses</h4><ul>
+      <li><b>Produit léger</b> : 3 h de vidéo à 397 $, sans communauté ni garantie — valeur perçue fragile hors effet de nom.</li>
+      <li><b>Contenu généraliste</b> et rapidement périssable (l'IA bouge tous les 3 mois).</li>
+      <li><b>Zéro accompagnement</b> : pas de suivi, pas de correction, taux de complétion probablement bas.</li>
+      <li><b>Dépendance totale à sa personne</b> — pas de marque détachable.</li>
+      <li><b>Aucune offre d'exécution</b> : elle laisse la valeur la plus chère sur la table.</li>
+    </ul></div>
+    <div class="q o"><h4>Opportunités (pour elle)</h4><ul>
+      <li>Licences entreprise 1000+ salariés = ticket élevé, déjà amorcé.</li>
+      <li>Certification / parcours long à plus forte marge.</li>
+      <li>Internationalisation (elle est mono-langue anglais).</li>
+    </ul></div>
+    <div class="q t"><h4>Menaces (pour elle)</h4><ul>
+      <li>Commoditisation : le « cours IA générique » devient gratuit (les labs eux-mêmes forment).</li>
+      <li>Spécialistes verticaux plus crédibles sur chaque niche.</li>
+      <li>Cours piratés/revendus (déjà visibles en ligne) qui érodent le prix.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="swot-toi"><div class="wrap">
+  <h2><span class="n">04</span>SWOT — ton offre formation (Prod'AI Lab)</h2>
+  <p class="lead">Mode debug : je ne t'écris pas ce qui fait plaisir, j'écris ce qui est vrai à la lumière du benchmark.</p>
+  <div class="swot">
+    <div class="q s"><h4>Forces</h4><ul>
+      <li><b>Tu construis vraiment</b> — avatars, mini-séries 9×16, automatisations n8n, systèmes clé en main. Ta preuve est démontrable en 30 secondes de vidéo, pas en logos.</li>
+      <li><b>Double offre formation + done-for-you</b> : chaque livraison client alimente le cours, chaque élève bloqué devient prospect done-for-you.</li>
+      <li><b>Verticale claire</b> : production vidéo/avatar IA — pas « l'IA en général ».</li>
+      <li><b>Marché francophone</b> nettement moins saturé que l'anglophone.</li>
+      <li><b>Le média est le produit</b> : tu enseignes la vidéo IA en publiant de la vidéo IA. Démonstration et marketing sont le même geste.</li>
+      <li><b>Pragmatisme terrain</b> (immobilier, chantiers, scène) : tu parles aux PME, pas aux comités.</li>
+    </ul></div>
+    <div class="q w"><h4>Faiblesses</h4><ul>
+      <li><b>Aucune audience propriétaire</b> — ni liste e-mail, ni volume LinkedIn/IG comparable. C'est LE goulot, pas le produit.</li>
+      <li><b>Zéro autorité empruntable</b> : pas de logo Fortune 500, pas de Wharton. Il faut fabriquer la preuve.</li>
+      <li><b>Piège « je construis sans fin »</b> : risque réel de sortir un cours 3× plus riche que le sien… et invendu.</li>
+      <li><b>Vendre n'est pas ton métier naturel</b> — et personne ne le fait à ta place aujourd'hui.</li>
+      <li><b>Dispersion</b> : Prod'AI Lab + conciergerie immobilière + contenu + avatars. Elle a UN sujet, tu en as quatre.</li>
+      <li><b>Aucun prix public, aucun tunnel</b> : rien à acheter maintenant, même pour quelqu'un de convaincu.</li>
+    </ul></div>
+    <div class="q o"><h4>Opportunités</h4><ul>
+      <li><b>Le trou du « après le cours »</b> : elle forme, personne ne livre. Formation → done-for-you est une passerelle naturelle.</li>
+      <li><b>PME/indépendants francophones</b> qui veulent de la vidéo mais n'ont ni budget agence ni compétence.</li>
+      <li><b>Lead magnet copiable immédiatement</b> : sa mécanique « cours e-mail 5 jours gratuit » est réplicable en une semaine, en version vidéo IA.</li>
+      <li><b>Formats courts vendables</b> : atelier live 2 h, mini-série de prompts, template n8n — plus faciles à vendre qu'un gros cursus.</li>
+      <li><b>Vidéo IA en pénurie de vraies compétences</b> : beaucoup en parlent, très peu livrent.</li>
+    </ul></div>
+    <div class="q t"><h4>Menaces</h4><ul>
+      <li><b>Obsolescence rapide</b> : un cours sur HeyGen/n8n vieillit en 4 mois.</li>
+      <li><b>Concurrence gratuite massive</b> sur YouTube/TikTok FR.</li>
+      <li><b>Guerre du prix</b> : le repère mental du marché est ~300–400 € pour un cours IA.</li>
+      <li><b>Le done-for-you mange la formation</b> : le temps client tue le temps produit, et inversement.</li>
+      <li><b>Risque d'être perçue comme « encore une formatrice IA »</b> si le positionnement reste générique.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section id="tows"><div class="wrap">
+  <h2><span class="n">05</span>Matrice TOWS — passer de l'analyse à l'action</h2>
+  <p class="lead">Le SWOT décrit. Le TOWS décide. Chaque case croise deux éléments et produit une action datable.</p>
+
+  <details open><summary>SO — Forces × Opportunités : attaquer</summary>
+    <div class="act">
+      <p><span class="code">SO-1</span><b>Cours e-mail gratuit « 5 jours pour ta première vidéo IA »</b> — sa mécanique exacte, ta verticale. Jour 1 script, jour 2 avatar, jour 3 voix, jour 4 montage, jour 5 publication. Objectif : 300 inscrits avant de vendre quoi que ce soit.</p>
+      <p><span class="code">SO-2</span><b>Le done-for-you comme preuve publique.</b> Chaque livraison client devient un post « avant/après » avec le système montré. Tu ne racontes pas ton expertise, tu la fais constater.</p>
+      <p><span class="code">SO-3</span><b>Positionnement en une phrase :</b> « Je forme les indépendants et PME francophones à produire leurs vidéos IA — ou je les produis pour eux. » À afficher partout, à l'identique.</p>
+      <p><span class="code">SO-4</span><b>Atelier live 2 h payant (97–147 €)</b> avant tout gros cursus. Ça teste la demande, ça génère les témoignages, ça devient le cours enregistré.</p>
+    </div>
+  </details>
+
+  <details><summary>ST — Forces × Menaces : défendre</summary>
+    <div class="act">
+      <p><span class="code">ST-1</span><b>Contre l'obsolescence :</b> vends la <b>méthode</b> (cadre de production reproductible) et traite les outils comme des modules mis à jour. Un abonnement « mises à jour » à 19 €/mois transforme la menace en revenu récurrent.</p>
+      <p><span class="code">ST-2</span><b>Contre le gratuit :</b> ce qu'on ne trouve pas sur YouTube = correction personnalisée, templates prêts, et un résultat livré. Ne vends jamais de l'information seule.</p>
+      <p><span class="code">ST-3</span><b>Contre la guerre des prix :</b> ne joue pas sur le prix du cours. Le cours est la porte d'entrée ; la marge est dans le done-for-you (1 500–5 000 €).</p>
+      <p><span class="code">ST-4</span><b>Contre « encore une formatrice IA » :</b> une signature visuelle non copiable — ton avatar Luna/Neva comme personnage récurrent, format identique à chaque fois.</p>
+    </div>
+  </details>
+
+  <details><summary>WO — Faiblesses × Opportunités : réparer</summary>
+    <div class="act">
+      <p><span class="code">WO-1</span><b>Résoudre le goulot audience en priorité absolue.</b> Un canal, un format, une fréquence : LinkedIn FR, vidéo avatar 60 s, 3×/semaine, 90 jours sans changer. Tout le reste passe après.</p>
+      <p><span class="code">WO-2</span><b>Fabriquer l'autorité que tu n'as pas :</b> 3 cas clients documentés chiffrés (temps gagné, coût évité, vues générées) valent plus qu'un logo Fortune 500 dans ta niche.</p>
+      <p><span class="code">WO-3</span><b>Déléguer la vente, pas la conception.</b> Une page de vente + un formulaire de candidature + un appel de 20 min scripté suffisent avant d'envisager un commercial.</p>
+      <p><span class="code">WO-4</span><b>Mettre un prix public.</b> Aujourd'hui rien n'est achetable. Trois lignes : atelier live · cours · done-for-you.</p>
+    </div>
+  </details>
+
+  <details><summary>WT — Faiblesses × Menaces : éviter le crash</summary>
+    <div class="act">
+      <p><span class="code">WT-1</span><b>Interdiction de construire un cursus complet avant la première vente.</b> Elle vend 3 h de vidéo à 397 $. Si tu construis 20 h avant d'avoir un acheteur, tu perds 3 mois. <b>Vends d'abord, produis ensuite.</b></p>
+      <p><span class="code">WT-2</span><b>Gel des nouveaux projets 90 jours.</b> Conciergerie immobilière et Bubble en mode maintenance. Un seul sujet à l'écran.</p>
+      <p><span class="code">WT-3</span><b>Cloisonner le temps :</b> done-for-you sur des jours fixes, formation sur des jours fixes. Sinon le client urgent mange toujours le produit important.</p>
+      <p><span class="code">WT-4</span><b>Critère d'arrêt écrit à l'avance</b> pour chaque livrable (voir Reality Gate). Sans lui, la faiblesse « je construis sans fin » annule toutes les autres actions.</p>
+    </div>
+  </details>
+</div></section>
+
+<section id="gate"><div class="wrap">
+  <h2><span class="n">06</span>Reality Gate — à passer avant de construire quoi que ce soit</h2>
+  <p class="lead">Cinq questions. Si une seule reste sans réponse écrite, la construction ne démarre pas.</p>
+  <div class="gate"><ol>
+    <li><b>Pour qui exactement ?</b> Pas « les entrepreneurs ». Un métier, une taille, une situation. Ex. : consultant indépendant FR, 0 vidéo publiée, veut être visible sans passer devant la caméra.</li>
+    <li><b>Quel problème coûteux ?</b> Ce qu'il perd aujourd'hui, en euros ou en heures. Si tu ne peux pas le chiffrer, il ne paiera pas.</li>
+    <li><b>Quelle preuve avant de tout construire ?</b> 10 personnes qui laissent leur e-mail sur une page qui n'existe pas encore. Ou 3 qui paient un atelier live. Preuve = argent ou e-mail, pas compliment.</li>
+    <li><b>Quelle est la version minimum montrable ?</b> 90 min de vidéo + 1 template + 1 session de questions. Rien de plus pour la v1.</li>
+    <li><b>Règle-frontière — c'est assez bon quand :</b> le plan est écrit, la v1 est enregistrée en une prise, le prix est public, et 3 personnes ont payé. À ce stade, on arrête de construire et on vend. Toute amélioration attend le retour des 3 premiers clients.</li>
+  </ol></div>
+  <div class="alert">
+    <h3>Le piège spécifique de ce benchmark</h3>
+    <p>Regarder Allie donne envie de viser son niveau de production et sa légitimité. Ne compare pas ton début à son arrivée : son cours à 397 $ est plus léger que ce que tu ferais spontanément. Ta v1 a le droit d'être plus petite que ce que tu crois acceptable.</p>
+  </div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+  <h2><span class="n">07</span>Plan 30 jours — une chose à la fois</h2>
+  <p class="lead">Par où commencer <b>maintenant</b> : semaine 1, action unique. Ne lis pas la suite avant de l'avoir faite.</p>
+  <div class="week">
+    <div class="w"><div class="lab">S1</div><div class="txt"><b>Positionnement + page.</b> Écris la phrase de positionnement (SO-3), publie une page simple avec les 3 offres et leurs prix. Aucune vidéo à produire cette semaine. <span class="pill">Commence ici</span></div></div>
+    <div class="w"><div class="lab">S2</div><div class="txt"><b>Lead magnet.</b> Écris les 5 e-mails du cours gratuit « 5 jours pour ta première vidéo IA » (SO-1) et branche le formulaire d'inscription.</div></div>
+    <div class="w"><div class="lab">S3</div><div class="txt"><b>Distribution.</b> Démarre le rythme 3 vidéos avatar/semaine sur LinkedIn (WO-1). Chaque vidéo renvoie au cours gratuit. Zéro autre canal.</div></div>
+    <div class="w"><div class="lab">S4</div><div class="txt"><b>Première vente.</b> Ouvre 10 places pour un atelier live 2 h à 97 € (SO-4). Si 3 places sont vendues → tu enregistres le cours. Sinon → tu changes l'offre, pas le produit.</div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <b>Sources</b> — Analyse fondée sur les pages publiques d'Allie K. Miller consultées le 18 août 2026.<br>
+  <a href="https://www.alliekmiller.com/">alliekmiller.com — page d'accueil</a> · 
+  <a href="https://www.alliekmiller.com/ai-first-academy">AI-First Academy — page produit</a> · 
+  <a href="https://www.linkedin.com/in/alliekmiller/">Profil LinkedIn</a> · 
+  <a href="https://aiwithallie.beehiiv.com/">Newsletter AI with ALLIE</a><br><br>
+  Les chiffres d'audience et de nombre d'étudiants sont ceux qu'elle communique elle-même et n'ont pas été vérifiés de façon indépendante.
+</div></footer>
+
+</body>
+</html>
